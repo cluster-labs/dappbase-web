@@ -8,6 +8,8 @@ import Crashlytics from "./pages/crashlytics/index";
 import Database from "./pages/database/index";
 import Functions from "./pages/functions/index";
 import Hosting from "./pages/hosting/index";
+import AdService from "./pages/adService/index";
+import Notifications from "./pages/notifications/index";
 import Storage from "./pages/storage/index";
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
           <Route exact path="/functions" component={Functions} />
           <Route exact path="/hosting" component={Hosting} />
           <Route exact path="/storage" component={Storage} />
+          <Route exact path="/notifications" component={Notifications} />
+          <Route exact path="/adservice" component={AdService} />
         </Layout>
       </BrowserRouter>
     </div>
@@ -28,3 +32,5 @@ function App() {
 }
 
 export default App;
+
+

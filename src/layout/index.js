@@ -160,7 +160,7 @@ export default function MiniDrawer(props) {
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" noWrap>
-              Authentication
+              Dappbase
             </Typography>
           </Toolbar>
         </AppBar>
@@ -185,8 +185,8 @@ export default function MiniDrawer(props) {
               {theme.direction === "rtl" ? (
                 <ChevronRightIcon />
               ) : (
-                <ChevronLeftIcon />
-              )}
+                  <ChevronLeftIcon />
+                )}
             </IconButton>
           </div>
           <Divider />
@@ -225,11 +225,11 @@ export default function MiniDrawer(props) {
           <List>
             {[
               {
-                title: "Notification",
-                link: "/notification",
+                title: "Notifications",
+                link: "/notifications",
                 icon: <NotificationsActive />
               },
-              { title: "Ad Service", link: "/ad_service", icon: <Stars /> }
+              { title: "Ad Service", link: "/adservice", icon: <Stars /> }
             ].map((menu, index) => (
               <NavLink key={index} {...menu} />
             ))}

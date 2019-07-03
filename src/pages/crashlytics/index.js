@@ -37,7 +37,7 @@ class Index extends React.Component {
     ];
     return (
       <React.Fragment>
-        <Hero background="#2B383F" />
+        <Hero title="Crashlytics" subTitle="Run your mobile backend code without managing servers" background="#2B383F" />
         <Container style={{ marginTop: "-150px" }}>
           <Grid container spacing={3}>
             {cards.map((c, i) => (

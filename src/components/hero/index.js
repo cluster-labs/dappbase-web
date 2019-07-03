@@ -7,10 +7,12 @@ function Hero(props) {
       <div style={{ background: props.background }} className={styles.hero}>
         <Container className={styles.container}>
           <Typography className={styles.title} variant="h4" component="h4">
-            Authentication
+            {props.title}
+            
           </Typography>
           <Typography className={styles.desc} variant="h6" component="h6">
-            Run your mobile backend code without managing servers
+          {props.subTitle}
+            
           </Typography>
           <br />
           <Button className={styles.button} variant="contained" color="primary">

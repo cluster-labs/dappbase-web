@@ -1,0 +1,83 @@
+.width100 {
+    width: 100%;
+}
+
+.tabs {
+    text-align: left;
+    background: white;
+    overflow: hidden;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+    .header {
+
+        font-weight: 500;
+        font-size: 16px;
+        background: #f5f5f5;
+
+        .tabCard {
+            padding: 16px 26px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            cursor: pointer;
+
+            transition: all 0s;
+
+            * {
+                transition: all 0s;
+            }
+
+            .iconWrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 41px;
+                margin-right: 16px;
+                width: 41px;
+                color: white;
+                border-radius: 100px;
+                font-size: 25px;
+            }
+
+            .subTitle {
+                font-size: 12px;
+                color: rgba(0, 0, 0, .6);
+            }
+
+            &:hover {
+                background: #dedede;
+            }
+
+            &.active {
+                color: white;
+                background: #2196F3;
+
+                .subTitle {
+                    color: rgba(255, 255, 255, .7);
+                }
+            }
+        }
+    }
+
+}
+
+.card {
+    text-align: left;
+    background: white;
+    margin-top: 16px;
+    max-height: 800px;
+    margin-bottom: 2rem;
+    overflow-y: auto;
+    overflow: hidden;
+    padding: 16px 30px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+    .body {
+        .title {
+            width: 100%;
+            margin-bottom: 4px;
+        }
+    }
+}
