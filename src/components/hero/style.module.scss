@@ -1,0 +1,36 @@
+.hero {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  color: white;
+  .container {
+    .title {
+      text-align: left;
+    }
+    .desc {
+      text-align: left;
+      font-weight: 200;
+      margin-top: 16px;
+    }
+    .button {
+      margin-top: 24px;
+      float: left;
+      background: white;
+      color: #2196f3;
+      padding: 10px 20px;
+      font-weight: 600;
+      border-radius: 8px;
+      i {
+        font-weight: 600;
+        margin-top: 2px;
+        margin-left: 10px;
+      }
+      &:hover {
+        background: #eee;
+      }
+    }
+  }
+}
+.halfbg {
+  height: 100px;
+}
