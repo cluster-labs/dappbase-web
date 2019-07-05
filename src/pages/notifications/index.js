@@ -42,7 +42,7 @@ class Index extends React.Component {
     return (
       <React.Fragment>
         <Hero title="Notifications" subTitle="Earn more from your apps the smart way by showing decentralize ads" background="#2B383F" />
-        <Container maxWidth="lg" style={{ marginTop: "-150px" }}>
+        <Container maxWidth="lg" style={{ marginTop: "-150px", marginBottom: "80px" }}>
           <div className={styles.tabs}>
             <Grid className={styles.header} container>
               {
@@ -85,8 +85,6 @@ function Tab1Body() {
     <React.Fragment>
       <h3 className={styles.title}>How does it work?</h3>
       <p>Ad Service helps you monetize your mobile app through in-app advertising. Ads can be displayed as banner ads, interstitial ads, video ads, or native ads — which are seamlessly added to platform native UI components. On Android, you can additionally display in-app purchase ads, which allow users to purchase advertised products from within your app.</p>
-      <h3 className={styles.title}>Not get it?</h3>
-      <p>Learn f**king IPFS. Even i didn't get it.</p>
     </React.Fragment>
   )
 }
@@ -96,8 +94,6 @@ function Tab2Body() {
     <React.Fragment>
       <h3 className={styles.title}>How does AdService work?</h3>
       <p>Ad Service helps you monetize your mobile app through in-app advertising. Ads can be displayed as banner ads, interstitial ads, video ads, or native ads — which are seamlessly added to platform native UI components. On Android, you can additionally display in-app purchase ads, which allow users to purchase advertised products from within your app.</p>
-      <h3 className={styles.title}>Not get it?</h3>
-      <p>Learn f**king IPFS. Even i didn't get it.</p>
     </React.Fragment>
   )
 }
@@ -107,8 +103,6 @@ function Tab3Body() {
     <React.Fragment>
       <h3 className={styles.title}>What can AdMob do for me?</h3>
       <p>Ad Service helps you monetize your mobile app through in-app advertising. Ads can be displayed as banner ads, interstitial ads, video ads, or native ads — which are seamlessly added to platform native UI components. On Android, you can additionally display in-app purchase ads, which allow users to purchase advertised products from within your app.</p>
-      <h3 className={styles.title}>Not get it?</h3>
-      <p>Learn f**king IPFS. Even i didn't get it.</p>
     </React.Fragment>
   )
 }

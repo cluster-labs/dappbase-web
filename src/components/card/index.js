@@ -22,7 +22,7 @@ function card(props) {
       </div>
       <div className={styles.bottom}>
         <a className={styles.link} href="#">
-          Get Started <i className="fa fa-external-link" aria-hidden="true" />
+          Add Your Prject <i className="fa fa-external-link" aria-hidden="true" />
         </a>
       </div>
     </div>

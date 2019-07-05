@@ -30,7 +30,7 @@ class Index extends React.Component {
         body: <Tab2Body />
       },
       {
-        title: "What can AdMob do for me?",
+        title: "What can Ad Service do for me?",
         subTitle: "View the docs",
         color: "#5C6BC0",
         icon: "fa-smile-o",
@@ -42,7 +42,7 @@ class Index extends React.Component {
     return (
       <React.Fragment>
         <Hero title="Ad Service" subTitle="Earn more from your apps the smart way by showing decentralize ads" background="#2B383F" />
-        <Container maxWidth="lg" style={{ marginTop: "-150px" }}>
+        <Container maxWidth="lg" style={{ marginTop: "-150px", marginBottom: "80px" }}>
           <div className={styles.tabs}>
             <Grid className={styles.header} container>
               {
@@ -85,8 +85,6 @@ function Tab1Body() {
     <React.Fragment>
       <h3 className={styles.title}>How does it work?</h3>
       <p>Ad Service helps you monetize your mobile app through in-app advertising. Ads can be displayed as banner ads, interstitial ads, video ads, or native ads — which are seamlessly added to platform native UI components. On Android, you can additionally display in-app purchase ads, which allow users to purchase advertised products from within your app.</p>
-      <h3 className={styles.title}>Not get it?</h3>
-      <p>Learn f**king IPFS. Even i didn't get it.</p>
     </React.Fragment>
   )
 }
@@ -95,9 +93,30 @@ function Tab2Body() {
   return (
     <React.Fragment>
       <h3 className={styles.title}>How does AdService work?</h3>
-      <p>Ad Service helps you monetize your mobile app through in-app advertising. Ads can be displayed as banner ads, interstitial ads, video ads, or native ads — which are seamlessly added to platform native UI components. On Android, you can additionally display in-app purchase ads, which allow users to purchase advertised products from within your app.</p>
-      <h3 className={styles.title}>Not get it?</h3>
-      <p>Learn f**king IPFS. Even i didn't get it.</p>
+      <p>
+        In <b>Web 2.0</b> you have 3 parties in the advertisment ecosystem.
+        <ol>
+          <li>First is the advertiser, who has an advertisement that he wants to publish.</li>
+          <li>Second is the advertisement platform that helps advertisers to place their adds on their platforms in a targetted way, so the ads are seen by a specific set of users.</li>
+          <li>And third is the users who see the advertisements.</li>
+        </ol>
+      </p>
+      <p>
+        Now the problem here is that the middle men, the advertisement platforms take a cut for displaying ads on their platform and the users don’t get anything for bieng bombarded by tens and hundreds of ads everyday.
+      </p>
+      <p>
+        So, what we do is that we replace the advertisement platform with the network of users itself.
+      </p>
+      <p>
+        Now, Let’s suppose all the users using the dapp form a network. Each user has surfs the app and the behaviour is tracked and recorded. All of this recorded behavioural data is stored with in the users device and is never sent out of the device. Now this data is reduced to some mathmatical vector which represents the user’s behaviour.
+      </p>
+      <p>
+        Now, an advertiser somes with an ad, and he wants to target a specific demographic. He choses the user behaviour that he wants to target. These desired properties are also converted to a mathematical vector which represents an ideal target customer.
+    </p>
+      Now, the advertiser publishes the ad on the network of users. Now this ad goes to every users device and checks if the user behavious vector is close to the advertiser’s desired vectors. If the vectors are close enough then the ad gets displayed.
+    <p>
+        Using this way, we totally remove the need of a middle man to publish the ads. Here, the advertisers save the cut that they gave to the advertisment platform and the users can get some fee for allowing the ads to display.
+      </p>
     </React.Fragment>
   )
 }
@@ -107,8 +126,6 @@ function Tab3Body() {
     <React.Fragment>
       <h3 className={styles.title}>What can AdMob do for me?</h3>
       <p>Ad Service helps you monetize your mobile app through in-app advertising. Ads can be displayed as banner ads, interstitial ads, video ads, or native ads — which are seamlessly added to platform native UI components. On Android, you can additionally display in-app purchase ads, which allow users to purchase advertised products from within your app.</p>
-      <h3 className={styles.title}>Not get it?</h3>
-      <p>Learn f**king IPFS. Even i didn't get it.</p>
     </React.Fragment>
   )
 }

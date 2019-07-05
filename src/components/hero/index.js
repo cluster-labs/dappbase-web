@@ -8,15 +8,15 @@ function Hero(props) {
         <Container className={styles.container}>
           <Typography className={styles.title} variant="h4" component="h4">
             {props.title}
-            
+
           </Typography>
           <Typography className={styles.desc} variant="h6" component="h6">
-          {props.subTitle}
-            
+            {props.subTitle}
+
           </Typography>
           <br />
           <Button className={styles.button} variant="contained" color="primary">
-            Get started <i className="fa fa-external-link" aria-hidden="true" />
+            {props.buttonText || 'Add Your Project'} <i className="fa fa-external-link" aria-hidden="true" />
           </Button>
         </Container>
       </div>

@@ -36,6 +36,13 @@ import { ThemeProvider } from "@material-ui/styles";
 const drawerWidth = 240;
 
 const darkThemeDrawer = createMuiTheme({
+  typography: {
+    fontFamily: "\"Montserrat\", sans-serif",
+    fontSize: 14,
+    fontWeightLight: 300,
+    fontWeightRegular: 400,
+    fontWeightMedium: 500,
+  },
   palette: {
     type: "dark", // Switching the dark mode on is a single property value change.
     background: {
