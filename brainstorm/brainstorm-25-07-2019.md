@@ -35,6 +35,8 @@ Twitter needs:
 - p2p communication mechanism to make nodes/devices talk. 
 - Hosting your apps
 
+
+
 ### Conclusion:
 - Networking is hard. We need a way to abstract the libs that can be plug-n-played with different applications.
 - Make Auth more easier to import. Maybe add some opiniated options so that the dev doesn't have to do much to get started.
