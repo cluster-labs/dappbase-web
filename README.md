@@ -1,13 +1,13 @@
-# Dappbase
-> A Collaborative Firebase for Dapps
+# SimpleAsWater
+> A Community Platform to Learn, Build & Share Dapps and Stories
 
 Who is doing this crazy thing?: [@vasa-develop](https://github.com/vasa-develop)<br />
-Dappbase Website: [dappbase.clusterlabs.io](https://dappbase.clusterlabs.io)
+SimpleAsWater Website: [dappbase.clusterlabs.io](https://dappbase.clusterlabs.io)
 
 
 ## Presentation
 
-The purpose of the presentation is to explain the problem and an overview of how dappbase works.
+The purpose of the presentation is to explain the problem and an overview of how SimpleAsWater works.
 
 [**Link to Presentation**](https://bit.ly/2JFH6eE)
 
@@ -53,7 +53,7 @@ No. We are NOT building just another WALLED GARDEN that allows you to use only t
 Our goal is to use generalized standards that allow a lot of projects to the platform. And while working IPFS stack for a while I realized that projects like [Libp2p](http://libp2p.io), [Multiformats](http://multiformats.io), [IPLD](http://ipld.io) provide a great base to start from.
 
 
-The dappbase platform is divided into different sections:
+The SimpleAsWater platform is divided into different sections:
 - Authentication [WIP]
 - Database [WIP]
 - Storage [WIP]
@@ -76,7 +76,7 @@ There are a ton of projects out there like uport, blockstack, selfkey, Jolocom w
 So, we allow all these projects to co-exist while still keeping them functional. We use [**IDM**](https://github.com/ipfs-shipyard/pm-idm) spec for managing multiple DIDs.
 
 
-You can check out [**Authentication Section**](http://dappbase.clusterlabs.io/) in Dappbase.
+You can check out [**Authentication Section**](http://dappbase.clusterlabs.io/) in SimpleAsWater.
 
 
 ### Storage
@@ -89,7 +89,7 @@ The noticible thing to observe here is that all these projects use hash based da
 
 ![That's Lit](https://media.giphy.com/media/jba8ucWVAhG9VcUkx9/giphy.gif)
 
-You can check out [**Storage Section**](http://dappbase.clusterlabs.io/storage) in Dappbase.
+You can check out [**Storage Section**](http://dappbase.clusterlabs.io/storage) in SimpleAsWater.
 
 
 ### Ad Service
@@ -112,6 +112,6 @@ Using this way, we totally remove the need of a middle man to publish the ads. H
 
 ## Checkout, Follow & Contribute
 
-Dappbase is an Open Source Project Under [**Cluster Labs**](https://github.com/cluster-labs/)
+SimpleAsWater is an Open Source Project Under [**Cluster Labs**](https://github.com/cluster-labs/)
 
-Checkout our progress at [**Dappbase Repo**](https://github.com/cluster-labs/dappbase)
+Checkout our progress at [**SimpleAsWater Github**](https://github.com/simpleaswater)
