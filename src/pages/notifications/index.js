@@ -42,7 +42,7 @@ class Index extends React.Component {
     return (
       <React.Fragment>
         <Hero title="Notifications" subTitle="Earn more from your apps the smart way by showing decentralize ads" background="#2B383F" />
-        <Container maxWidth="lg" style={{ marginTop: "-150px", marginBottom: "80px" }}>
+        <Container maxWidth="lg" style={{ marginTop: "-130px", marginBottom: "80px" }}>
           <div className={styles.tabs}>
             <Grid className={styles.header} container>
               {
