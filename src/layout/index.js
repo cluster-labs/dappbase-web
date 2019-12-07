@@ -6,18 +6,16 @@ class Index extends Component {
     render() {
         return (
             <Fragment>
-                <HomeLayout>
-                    {this.props.children}
-                </HomeLayout>
                 {
-                    /* window.location.pathname.split('/')[1] == "" ?
+                    window.location.pathname.split('/')[1] == "project" ?
+                        <DashboardLayout>
+                            {this.props.children}
+                        </DashboardLayout>
+                        :
                         <HomeLayout>
                             {this.props.children}
                         </HomeLayout>
-                        :
-                        <DashboardLayout>
-                            {this.props.children}
-                        </DashboardLayout> */
+
                 }
             </Fragment>
         )

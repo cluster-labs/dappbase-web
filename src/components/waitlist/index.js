@@ -54,12 +54,12 @@ export default function CustomizedInputs() {
     };
 
     const sendEmail = event => {
-        
+
         setValues({ ...values, 'buttonText': 'WAIT' })
 
         axios({
             method: 'post',
-            url: `https://simpleaswater.com:8081/email`,
+            url: `https://vaibhavsaini.com:8081/email`,
             data: {
                 to: `vasa@towardsblockchain.com`,
                 body: `User with email ${values.email} joined the waitlist.`,

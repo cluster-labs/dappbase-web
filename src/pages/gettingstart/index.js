@@ -13,6 +13,8 @@ import IPFSImg from '../../assets/img/ipfs.png'
 import SolidityImg from '../../assets/img/solidity.svg'
 import EthereumImg from '../../assets/img/ethereum.png'
 
+import { createProject } from "../../redux/project/actions";
+
 const useStyles = makeStyles(theme => ({
     main: {
         color: '#ffffff',
@@ -98,6 +100,9 @@ const useStyles = makeStyles(theme => ({
     },
     footer: {
         marginBottom: '40px'
+    },
+    link: {
+        textDecoration: 'none'
     }
 })
 )
@@ -120,9 +125,6 @@ export default function Login() {
             <TopBar />
             <div className={classes.main} style={{ background: '#6b61fc' }}>
                 <Grid container spacing={3}>
-                    {/* <Grid item xs={12} sm={12} md={12} xl={12}>
-                        
-                    </Grid> */}
                     <Grid item xs={12} sm={12} md={6} xl={6}>
                         <h1 className={classes.featureHeading}>
                             Welcome to Dappkit!
@@ -133,14 +135,18 @@ export default function Login() {
                         </Typography>
                     </Grid>
                     <Grid item xs={12} sm={12} md={12} xl={12}>
-                        <Button size="large" variant="contained"
-                            color="primary" className={classes.primaryButton}>
-                            Create a Project
-                        </Button>
-                        <Button size="large" variant="contained"
-                            color="secondary" className={classes.secondaryButton}>
-                            View Docs
-                        </Button>
+                        <NavLink to="/start/new" className={classes.link}>
+                            <Button size="large" variant="contained"
+                                color="secondary" className={classes.primaryButton}>
+                                Create a Project
+                            </Button>
+                        </NavLink>
+                        <a href="https://simpleaswater.gitbook.io/dappkit/" target="_blank" className={classes.link}>
+                            <Button size="large" variant="contained"
+                                color="secondary" className={classes.secondaryButton}>
+                                View Docs
+                            </Button>
+                        </a>
                     </Grid>
                 </Grid>
             </div>

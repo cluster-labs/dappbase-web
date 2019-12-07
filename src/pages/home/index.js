@@ -23,12 +23,13 @@ import MythxImg from '../../assets/img/mythx.png'
 import RaidenImg from '../../assets/img/raiden.png'
 import NucypherImg from '../../assets/img/nucypher.png'
 import InfuraImg from '../../assets/img/infura.png'
-import TemporalImg from '../../assets/img/partner_temporal.png'
 import PinataImg from '../../assets/img/pinata.png'
 import MetamaskImg from '../../assets/img/metamask.svg'
 import UportImg from '../../assets/img/uport.png'
 import PeergosImg from '../../assets/img/peergos.png'
 import KeybaseImg from '../../assets/img/keybase.png'
+
+import TemporalImg from '../../assets/img/partner_temporal.png'
 
 import AuthIcon from '@material-ui/icons/People'
 import StorageIcon from '@material-ui/icons/Cloud'
@@ -63,10 +64,32 @@ const useStyles = makeStyles(theme => ({
     main: {
         textAlign: '-webkit-left',
         padding: '4%',
-        paddingTop: '5%'
+        [theme.breakpoints.up('xs')]: {
+            paddingTop: '7%'
+        },
+        [theme.breakpoints.up('sm')]: {
+            paddingTop: '6%'
+        },
+        [theme.breakpoints.up('md')]: {
+            paddingTop: '5%'
+        },
+        [theme.breakpoints.up('xl')]: {
+            paddingTop: '5%'
+        },
     },
     featureHeading: {
-        fontSize: '3.5em',
+        [theme.breakpoints.up('xs')]: {
+            fontSize: '2em',
+        },
+        [theme.breakpoints.up('sm')]: {
+            fontSize: '3em',
+        },
+        [theme.breakpoints.up('md')]: {
+            fontSize: '3.5em'
+        },
+        [theme.breakpoints.up('xl')]: {
+            fontSize: '4em'
+        },
     },
     featureImage: {
         marginTop: '10%',
@@ -118,7 +141,18 @@ const useStyles = makeStyles(theme => ({
         padding: '60px'
     },
     featureGridTitle: {
-        fontSize: '2.5em',
+        [theme.breakpoints.up('xs')]: {
+            fontSize: '1.6em',
+        },
+        [theme.breakpoints.up('sm')]: {
+            fontSize: '2.1em'
+        },
+        [theme.breakpoints.up('md')]: {
+            fontSize: '2.5em'
+        },
+        [theme.breakpoints.up('xl')]: {
+            fontSize: '2.5em'
+        },
     },
     end: {
         background: "#6b61fc",
@@ -148,6 +182,20 @@ const useStyles = makeStyles(theme => ({
         marginLeft: theme.spacing(2),
         marginTop: theme.spacing(1),
         fontSize: '1em'
+    },
+    textPrimary: {
+        [theme.breakpoints.up('xs')]: {
+            fontSize: '1em',
+        },
+        [theme.breakpoints.up('sm')]: {
+            fontSize: '3em',
+        },
+        [theme.breakpoints.up('md')]: {
+            fontSize: '3.5em'
+        },
+        [theme.breakpoints.up('xl')]: {
+            fontSize: '1.25em'
+        },
     }
 }));
 
@@ -170,7 +218,7 @@ function Home() {
 
         axios({
             method: 'post',
-            url: `https://simpleaswater.com:8081/email`,
+            url: `https://vaibhavsaini.com:8081/email`,
             data: {
                 to: `vasa@towardsblockchain.com`,
                 body: `User with email ${values.email} joined the waitlist.`,
@@ -215,7 +263,7 @@ function Home() {
                     <div className={classes.card}>
                         <Grid className={classes.properties} container spacing={3}>
                             <Grid item xs={12} sm={12} md={4} xl={4} style={{ padding: '40px' }}>
-                                <Typography color="textPrimary" variant="h6" style={{ padding: '10px', paddingTop: '0px' }}>
+                                <Typography color="textPrimary" variant="h6" className="textPrimary" style={{ padding: '10px', paddingTop: '0px' }}>
                                     Build dapps fast, with easy to integrate, cross-platform modules
                                 </Typography>
                                 <Typography color="textSecondary" variant="body1" style={{ paddingLeft: '10px', paddingRight: '10px' }}>
@@ -344,7 +392,7 @@ function Home() {
                         <Grid container spacing={3} className={classes.featureGrid}>
                             <Grid item xs={12} >
                                 <Typography color="textPrimary" variant="h4" className={classes.featureGridTitle}>
-                                    <b style={{ wordBreak: 'break-word' }}>A comprehensive dapp <br />development platform</b>
+                                    <b style={{ wordBreak: 'keep-all' }}>A comprehensive dapp <br />development platform</b>
                                 </Typography>
                             </Grid>
                             {/* <Grid item xs={4} style={{ padding: '40px' }}>
@@ -530,13 +578,22 @@ function Home() {
                             <Grid item xs={12} style={{ paddingBottom: '40px', marginTop: '40px' }}>
                                 <Divider variant="middle" style={{ marginLeft: '20%', marginRight: '20%', marginBottom: '40px', backgroundColor: '#BDC3C7' }} />
                                 <Typography color="textPrimary" variant="h4">
-                                    <b>Partners and Clients</b>
+                                    <b>Partners</b>
                                 </Typography>
                             </Grid>
                             <Grid item xs={12} sm={12} md={12} xl={12} style={{ padding: '20px' }}>
-                                <a href="https://temporal.cloud" target="_blank">
-                                    <img src={TemporalImg} style={{ width: '200px' }} className={classes.supported} />
-                                </a>
+                                <Grid container spacing={4}>
+                                    <Grid item xs={12} sm={12} md={6} xl={6} style={{ padding: '20px' }}>
+                                        <a href="https://temporal.cloud" target="_blank">
+                                            <img src={TemporalImg} style={{ width: '200px' }} className={classes.supported} />
+                                        </a>
+                                    </Grid>
+                                    <Grid item xs={12} sm={12} md={6} xl={6} style={{ padding: '20px' }}>
+                                        <a href="https://www.moibit.io/" target="_blank">
+                                            <img src="https://raw.githubusercontent.com/moibit/logo-assets/master/logos/moibit-solo-banner.jpg" style={{ width: '200px' }} className={classes.supported} />
+                                        </a>
+                                    </Grid>
+                                </Grid>
                             </Grid>
                         </Grid>
 

@@ -19,6 +19,8 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import { Link } from "react-router-dom";
 import ListItemText from "@material-ui/core/ListItemText";
 
+import DappkitLogo from "../assets/img/dappkit_logo.png"
+
 import {
   DeveloperBoard,
   NotificationsActive,
@@ -49,7 +51,9 @@ const darkThemeDrawer = createMuiTheme({
       paper: "#19212B",
       default: "#262F3D"
     },
-    primary: blue,
+    primary: {
+      main: '#6b61fc'
+    },
     secondary: {
       main: "#f44336"
     }
@@ -117,6 +121,9 @@ const useStyles = makeStyles(theme => ({
   },
   content: {
     flexGrow: 1
+  },
+  dappkitHomeLink: {
+    cursor: 'pointer'
   }
 }));
 
@@ -167,7 +174,7 @@ export default function MiniDrawer(props) {
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" noWrap>
-              Dappbase
+              {window.location.href.split('/').pop().split('-')[0]}
             </Typography>
           </Toolbar>
         </AppBar>
@@ -188,6 +195,10 @@ export default function MiniDrawer(props) {
           open={open}
         >
           <div className={classes.toolbar}>
+            <img className={classes.dappkitHomeLink} src={DappkitLogo} width={30} onClick={() => { window.location = "https://dappkit.io" }} />
+            <Typography className={classes.dappkitHomeLink} style={{ paddingLeft: '16px' }} variant="h6" onClick={() => { window.location = "https://dappkit.io" }}>
+              <b>Dappkit</b>
+            </Typography>
             <IconButton onClick={handleDrawerClose}>
               {theme.direction === "rtl" ? (
                 <ChevronRightIcon />
